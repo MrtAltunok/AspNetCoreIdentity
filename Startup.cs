@@ -66,6 +66,11 @@ namespace AspNetCoreIdentity
             }
 
             app.UseAuthentication();
+            //Eğer .net core 3 ve üstünü kullanıyorsanız
+            //Sırası ile         
+            //app.UseAuthentication();
+            //app.UseAuthorization();
+            //yazmak gerekmektedir.
             app.UseMvc();
         }
     }
